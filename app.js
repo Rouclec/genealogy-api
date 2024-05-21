@@ -5,7 +5,11 @@ const cookieParser = require("cookie-parser");
 const session = require("express-session");
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "http://localhost:3001"],
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://genealogy-delta.vercel.app",
+  ],
   credentials: true,
   optionSuccessStatus: 200,
 };
